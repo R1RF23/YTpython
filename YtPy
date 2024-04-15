@@ -1,0 +1,8 @@
+import pytube
+
+link = input('https://www.youtube.com/watch?v=Em2awmR9cH0')
+video_download = pytube.Youtube(link)
+video_download.streams.first().download()
+print('Video Downloaded', link)
+
+
